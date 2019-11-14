@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grids</title>
+  <style>
+    .wrapper {
+      display: grid;
+      grid-template-columns: 70% 30%;
+      /*
+      grid-column-gap: 1em;
+      grid-row-gap: 1em;
+      */
+      grid-gap: 1em;
+
+    }
+    .wrapper > div{
+      background:#eee;
+      padding:1em;
+    }
+    .wrapper > div:nth-child(odd){
+      background: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolorem nesciunt iure aperiam blanditiis at voluptas maiores dolores earum iusto, cum alias ut sequi voluptatem illo sint nisi natus dicta repudiandae maxime error quos quas excepturi. Minus nesciunt, aperiam nisi obcaecati fugiat in, laborum sapiente alias, deserunt, temporibus hic! Omnis tenetur consequuntur sit et sed blanditiis veniam possimus porro autem!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto doloribus ad, nisi, rerum nemo at quam. Amet beatae, expedita, et consequatur nostrum magnam ex molestiae porro aliquam laboriosam, enim, neque.
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quo beatae eos quae quos sunt dolor, consequatur ea facilis soluta itaque? Cum esse fuga eum, illo, obcaecati illum odit ab animi amet mollitia numquam asperiores, ad. Impedit delectus qui sint! Tempora nostrum dolores hic molestiae asperiores ratione saepe odit quo illum est repudiandae, provident eveniet mollitia cum possimus aperiam reiciendis.
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto doloribus ad, nisi, rerum nemo at quam. Amet beatae, expedita, et consequatur nostrum magnam ex molestiae porro aliquam laboriosam, enim, neque.
+    </div>
+  </div>
+</body>
+</html>

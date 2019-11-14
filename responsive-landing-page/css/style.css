@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin:0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 17px;
+  color: #D90033;
+  line-height: 1.6;
+}
+
+#showcase{
+  background-image: url("../img/img-background.jpeg"); /*.. exits current folder */
+  height: 100vh; /*Key style. Sets the html background to be the height of the window. By default it is of the size of its contents.*/
+  background-size: cover;
+  background-position: center;
+  display: flex; /*all contents become one after the other */
+  flex-direction: column; /*return them one over the other. These steps are needed to make the site responsive*/
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#showcase h1{
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+#showcase P{
+  background: rgba(247,247,247,0.4);
+  background-size: 100vh;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px white;
+  padding: 0px 10px;
+}
+
+#showcase .button{
+  background: rgba(247,247,247,0.4);
+  font-size: 18px;
+  text-decoration: none;
+  color: #D90033;
+  padding:10px 20px;
+  border: #D90033 1px solid;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#showcase .button:hover{
+  background: #D90033;
+  color: white;
+}
+
+#section-a{
+  padding: 20px;
+  background: #D90033;
+  color: white;
+  text-align: center;
+}
+
+#section-b{
+  padding: 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+#section-c{
+  display: flex;
+  text-align: center;
+}
+
+#section-c .box-1, #section-c .box-2, #section-c .box-3{
+  padding: 10px;
+}
+
+#section-c .box-1:hover, #section-c .box-2:hover, #section-c .box-3:hover{
+  background: #D90033;
+  color: white;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Bitcoin Newsfeed</title>
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="sketch.js"></script>
+
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+	<!-- Header Showcase -->
+	<header id="showcase">
+		<div class="content-wrap">
+			<h1>Your Newsfeed on Bitcoin</h1>
+			<p>News about Bitcoin from international sources updated daily</p>
+		</div>
+	</header>
+
+	<!--Main Area-->
+	<main id="main">
+		<!--Section Apikey-->
+		<section id="api-key">
+			<div class="content-wrap">
+				<h2>Insert your API Key from newsapi.org</h2>
+				<p>
+					API Key: <input type="text" id="apiKey"></input>
+					<br/>
+					<button id="submit">Get News</button>
+				</p>
+			</div>
+		</section>
+
+		<!--Dynamic Content-->
+		<section id="dynamic-content">
+			<ul id="sketch-holder" class="grid">
+			</ul>
+		</section>
+
+	</main>
+	<footer id="main-footer">
+	    <div>Bitcoin Newsfeed powered by <a href="http://newsapi.org" target="_blank">newsapi.org</a></div>
+	    <div>Project by <a href="http://cristianmejia.net" target="_blank">Cristian Mejia</a></div>
+	  </footer>
+</body>
+</html>
